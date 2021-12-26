@@ -150,7 +150,7 @@ def move(hero, movement):
 
 
 start_screen()
-num_of_map = int(input('Напишите номер карты(число), которую вы хотите загрузить:'))
+num_of_map = int(input('Напишите номер карты(одно число), которую вы хотите загрузить:'))
 try:
     level_map = load_level(f'map{num_of_map}.txt')
     player, level_x, level_y = generate_level(load_level(f'map{num_of_map}.txt'))
